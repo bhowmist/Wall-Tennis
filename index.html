@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wall Tennis</title>
+
+    <!-- css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/tennis.css" rel="stylesheet">
+
+    <!-- font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+
+    <div class="row">
+        <div class="col-2 col-md-2 col-sm-4">
+
+            <div class="container" >
+                <h3 >Your Score</h3>
+                <div class="jumbotron">
+                        <span id="leftPlayer">0</span>
+                </div>
+
+                <button type="button" class="btn btn-primary" id="start" onclick="this.disabled=true;">Start</button></br>
+                <button type="button" class="btn btn-primary" id="pause" onclick="this.disabled=true;">Pause</button></br>
+                <button type="button" class="btn btn-primary" id="re-set" onclick="this.disabled=true;">Reset</button>
+
+
+                <div class="jumbotron" id="notes">
+                        <h5 style="text-align: center"><b>Some notes</b></h5>
+                        <ul >
+                           <li>Winning score is 5</li>
+                           <li>Use your mouse to move the left side paddle</li>
+                           <li>As your score increases, match becomes more difficult</li>
+                           <li>You can pause/ resume/ reset at any time</li>
+                           <li>Best of luck!</li>
+
+                       </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-8 col-md-8 col-sm-4">
+            <div class="container" style="padding-left: 35px; ">
+                    <div class="container" >
+
+                        <div class="jumbotron" id="header">
+                            <span style="padding-top: 3px; font-size: 25px"> Welcome to the Wall Tennis Arena!</span>
+                        </div>
+
+                    </div>
+                    <canvas id="myCanvas" width="800" height="600"></canvas>
+            </div>
+        </div>
+
+
+        <div class="col-2 col-md-2 col-sm-4">
+
+            <!-- auto paddle score section + social icons-->
+            <div class="container"  style="padding-left: 0;">
+
+                <h3 > Auto Paddle Score</h3>
+                <div class="jumbotron" style="margin-left: 25px;">
+                    <span id="rightPlayer">0</span>
+                </div>
+
+                <!-- social icons-->
+                <ul class="social-icon">
+                    <li><a href="https://bhowmist.github.io/jit/" class="fa fa-dribbble"></a></li>
+                    <li><a href="https://plus.google.com/u/0/100998577154959478262" class="fa fa-google-plus"></a></li>
+                    <li><a href="https://www.linkedin.com/in/bhowmicksatyajit/" class="fa fa-linkedin"></a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- about me, counter-->
+            <div style="position: relative; width: 200px; height: 450px; padding-left: 0;">
+
+               <!--about me-->
+                <div class="jumbotron" id="about">
+                    <h5 style="text-align: center"><b>About me!</b></h5>
+                    <p >Hi, This is Jit. I'm an avid programmer and a tech buff. I have developed this game. It uses artificial intelligence.
+                        The auto paddle uses the intelligent algorithm, running at the back, to adjust its moves.
+                        Play the game and feel free to reach out to me with any feedback/suggestion.</br>
+                        Find more details about me by visiting my web page.</p>
+                </div>
+
+                 <!--counter-->
+                <div style="position: absolute; bottom: 5px; padding-top: 0; " class="footer-copyright">
+                        Page Views</br>
+
+                        <!-- hitwebcounter Code START -->
+                        <a href="http://www.hitwebcounter.com" target="_blank">
+                            <img src="http://hitwebcounter.com/counter/counter.php?page=6692297&style=0025&nbdigits=5&type=page&initCount=0" title="url and counting visits" Alt="url and counting visits"   border="0" >
+                        </a>                                        <br/>
+                        <!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com" title="Accurate Visits"
+                                                     target="_blank" style="font-family: Arial, Helvetica, sans-serif;
+                                                font-size: 9px; color: #6D5B77; text-decoration: underline ;"><em>Accurate Visits</em>
+                                                </a>
+
+                        </br>
+
+                        <!--copyright-->
+                        <span style="color:white"> &COPY; Jit 2017. All Rights Reserved.</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tennis.js"></script>
+</body>
+
+</html>
