@@ -1,0 +1,11 @@
+{
+  "name": "wall-tennis",
+  "version": "1.0.0",
+  "description": "an interactive game",
+  "scripts": {
+    "start": "harp server --port $PORT"
+  },
+  "dependencies": {
+    "harp": "*"
+  }
+}
