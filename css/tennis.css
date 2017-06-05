@@ -30,16 +30,14 @@ canvas{
 #header{
     padding-top:0;
     width: 770px;
-    height: 25px;
     margin-bottom: 5px;
     background-color:seagreen;
     color: white;
-    font-size: 5px;
+    font-size: 10px;
 }
 
 #notes{
     width: 150px;
-    height: 250px;
     text-align: left;
     background-color: rgba(109, 91, 119, 0.1);
     border:2px solid #000000;
@@ -58,7 +56,6 @@ ul {
     padding-top: 3px;
     padding-bottom: 3px;
     width: 200px;
-    height: 280px;
     text-align: justify;
     background-color: rgba(126, 192, 233, 0.1);
     border:2px solid #000000;
@@ -66,10 +63,6 @@ ul {
 }
 #about p{
    font-size: 17px;
-}
-
-h3{
-    margin-left: 10px;
 }
 
 /*---------------------------------------
